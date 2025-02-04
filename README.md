@@ -1,2 +1,2 @@
-# jamesRenn-ie.github.io
-Portfolio website
+# JamesRenn-ie.github.io
+Portfolio website 
