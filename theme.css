@@ -74,6 +74,11 @@
       color: #555;
     }
 
+    .project-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     footer {
       margin-top: 40px;
       text-align: center;
