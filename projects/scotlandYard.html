@@ -3,51 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>James Rennie - Portfolio</title>
+  <title>Scotland Yard AI Project</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link href="../theme.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4f8, #d9e7ff);
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+      background-color: #007bff;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #f0f0f0;
+    }
+
+    main {
+      max-width: 800px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #007bff;
+      border-bottom: 2px solid #d9e7ff;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>James Rennie</h1>
-    <p>Computer Science Undergraduate</p>
+    <h1>Scotland Yard AI Project</h1>
+    <p>An AI-driven solution for strategic gameplay in the Scotland Yard board game.</p>
   </header>
 
-  <nav>
-    <a href="#projects">Projects</a>
-    <a href="James Rennie - CV.pdf" download>Download CV</a>
-  </nav>
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <p>This project involved the design and implementation of an AI to play the classic board game <strong>Scotland Yard</strong>. The AI was built to efficiently strategize movements, predict opponents' moves, and optimize gameplay to either evade or catch the target player.</p>
+    </section>
 
-  <section id="projects" class="projects">
-    <div class="project-card">
-      <h3>Scheduling & Client Management App</h3>
-      <p>Developed for Sprint Community Transport using Flutter and SQL, featuring CI with GitHub.</p>
-    </div>
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>Object-oriented design in Java for maintainable and scalable code.</li>
+        <li>Pathfinding algorithms to optimize moves on the game board.</li>
+        <li>Opponent prediction logic using heuristic analysis.</li>
+        <li>Efficient decision-making algorithms for dynamic game scenarios.</li>
+      </ul>
+    </section>
 
-    <div class="project-card">
-      <h3>Conway's Game of Life</h3>
-      <p>Created serial, parallel, and distributed versions leveraging AWS and Go's Goroutines.</p>
-    </div>
+    <section>
+      <h2>Technical Challenges</h2>
+      <p>One of the primary challenges was implementing an efficient pathfinding algorithm that could operate within the constraints of the game's dynamic state. Additionally, predicting the moves of multiple opponents required the development of a robust heuristic evaluation system.</p>
+    </section>
 
-    <div class="project-card">
-      <h3>Automatic Maze Generation Game</h3>
-      <p>A Python-based game using recursive algorithms and object-oriented design.</p>
-    </div>
+    <section>
+      <h2>Technologies Used</h2>
+      <ul>
+        <li>Programming Language: Java</li>
+        <li>Design Patterns: Object-Oriented Programming (OOP)</li>
+        <li>Algorithms: Pathfinding and Heuristic Evaluation</li>
+      </ul>
+    </section>
 
-  <a href="/projects/scotlandYard.html" class="project-card">
-      <h3>Scotland Yard AI</h3>
-      <p>Implemented game AI in Javasdasdadsdasda to play the board game Scotland Yard with efficient strategies.</p>
-    </a>
+    <section>
+      <h2>Project Outcome</h2>
+      <p>The AI demonstrated a high level of strategic decision-making, significantly improving gameplay outcomes. It successfully showcased efficient opponent tracking and decision-making capabilities.</p>
+    </section>
 
-  <a href="https://github.com/JamesRenn-ie/postureAppBrisHack24" class="project-card">
-      <h3>Bris Hack 24 Posture detection</h3>
-      <p>A mobile app to detect bad posture and alert the user. Written in Java.</p>
-  </a>
-  </section>
-  
+    <section>
+      <h2>Future Improvements</h2>
+      <p>Potential future enhancements include integrating a machine learning component to adapt strategies based on gameplay data and optimizing the pathfinding logic for faster computations.</p>
+    </section>
+
+    <section>
+      <h2>Source Code</h2>
+      <p>You can view the full project on <a class="btn" href="https://github.com/JamesRenn-ie/scotland-yard-ai">GitHub</a>.</p>
+    </section>
+  </main>
+
   <footer>
     <p>&copy; 2025 James Rennie. All rights reserved.</p>
   </footer>
 </body>
 </html>
-
