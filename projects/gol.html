@@ -13,54 +13,52 @@
     <a href="James Rennie - CV.pdf" download>Download CV</a>
   </nav>
   <header>
-    <h1>Parallel and distributed Game Of Life</h1>
-    <p>An AI-driven solution for strategic gameplay in the Scotland Yard board game.</p>
-  </header>
+  <h1>Parallel and Distributed Game of Life</h1>
+  <p>An optimized implementation of Conway's Game of Life leveraging parallel and distributed computing techniques.</p>
+</header>
 
-  <main>
-    <section>
-      <h2>Project Overview</h2>
-      <p>This project involved the design and implementation of an AI to play the classic board game <strong>Scotland Yard</strong>. The AI was built to efficiently strategize movements, predict opponents' moves, and optimize gameplay to either evade or catch the target player.</p>
-    </section>
+<main>
+  <section>
+    <h2>Project Overview</h2>
+    <p>This project focused on designing serial, parallel, and distributed versions of Conway’s Game of Life. The aim was to benchmark performance improvements by leveraging multithreading and distributed systems for large-scale grid simulations.</p>
+  </section>
 
-    <section>
-      <h2>Key Features</h2>
-      <ul>
-        <li>Object-oriented design in Java for maintainable and scalable code.</li>
-        <li>Pathfinding algorithms to optimize moves on the game board.</li>
-        <li>Opponent prediction logic using heuristic analysis.</li>
-        <li>Efficient decision-making algorithms for dynamic game scenarios.</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Key Features</h2>
+    <ul>
+      <li>Serial implementation for baseline performance comparison.</li>
+      <li>Parallel processing using Go's Goroutines and channels for efficient multithreading.</li>
+      <li>Distributed computing implementation with workload distribution across AWS instances.</li>
+      <li>Benchmarking and analysis of speedup and scalability.</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Technical Challenges</h2>
-      <p>One of the primary challenges was implementing an efficient pathfinding algorithm that could operate within the constraints of the game's dynamic state. Additionally, predicting the moves of multiple opponents required the development of a robust heuristic evaluation system.</p>
-    </section>
+  <section>
+    <h2>Technical Challenges</h2>
+    <p>Implementing efficient grid partitioning for distributed computing was a significant challenge, especially in ensuring minimal communication overhead between nodes. Optimizing Goroutines to avoid bottlenecks in the parallel version was also critical for performance.</p>
+  </section>
 
-    <section>
-      <h2>Technologies Used</h2>
-      <ul>
-        <li>Programming Language: Java</li>
-        <li>Design Patterns: Object-Oriented Programming (OOP)</li>
-        <li>Algorithms: Pathfinding and Heuristic Evaluation</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Technologies Used</h2>
+    <ul>
+      <li>Programming Language: Go</li>
+      <li>Concurrency: Goroutines and Channels</li>
+      <li>Distributed Computing: AWS Instances</li>
+      <li>Performance Analysis: Benchmarking Tools</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Project Outcome</h2>
-      <p>The AI demonstrated a high level of strategic decision-making, significantly improving gameplay outcomes. It successfully showcased efficient opponent tracking and decision-making capabilities.</p>
-    </section>
+  <section>
+    <h2>Project Outcome</h2>
+    <p>The parallel and distributed implementations demonstrated significant performance gains over the serial version, particularly for large grid sizes. The project highlighted the potential of parallel and distributed systems for computationally intensive tasks.</p>
+  </section>
 
-    <section>
-      <h2>Future Improvements</h2>
-      <p>Potential future enhancements include integrating a machine learning component to adapt strategies based on gameplay data and optimizing the pathfinding logic for faster computations.</p>
-    </section>
+  <section>
+    <h2>Future Improvements</h2>
+    <p>Future enhancements could include optimizing inter-node communication in the distributed implementation and exploring GPU acceleration for further performance gains.</p>
+  </section>
+</main>
 
-    <section>
-      <h2>Source Code</h2>
-      <p>You can view the full project on <a class="btn" href="https://github.com/JamesRenn-ie/scotland-yard-ai">GitHub</a>.</p>
-    </section>
   </main>
 
   <footer>
