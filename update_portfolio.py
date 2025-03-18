@@ -27,6 +27,13 @@ for repo in repos:
     repo_url = repo["html_url"]
     repo_desc = repo.get("description", "No description available.")
 
+    # Check if "no-portfolio" topic is in the repository topics
+    topics_response = requests.get(repo["url"] + "/topics", headers={"Accept": "application/vnd.github.mercy-preview+json"})
+    topics = topics_response.json().get("names", [])
+    
+    if "no-portfolio" in topics:
+        continue  # Skip adding this repository
+
     # Avoid duplicate projects
     if repo_url in existing_projects:
         continue
