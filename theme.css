@@ -119,7 +119,9 @@
 
     /* Container for tags */
     .tags {
-      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
     
     /* Base tag style */
