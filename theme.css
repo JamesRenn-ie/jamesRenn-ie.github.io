@@ -1,116 +1,154 @@
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    .github-icon {
-      width: 20px;
-      height: 20px;
-      vertical-align: middle;
-      margin-left: 8px;
-      margin-right: 8px;
-    }
-    
+/* Subtle gradient background */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f9fafb);
+  color: #1f2937;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
 
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-    }
+/* Main container */
+main {
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
 
-    main {
-      max-width: 800px;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
-    section {
-      margin-bottom: 40px;
-    }
+header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
 
-    h2 {
-      color: #007bff;
-      border-bottom: 2px solid #d9e7ff;
-      padding-bottom: 5px;
-    }
+header p {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-top: 8px;
+}
 
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+/* Navigation */
+nav {
+  margin-top: 20px;
+}
 
-    header h1 {
-      font-size: 2.5rem;
-      color: #333;
-    }
+nav a {
+  text-decoration: none;
+  color: #4f46e5;
+  margin: 0 12px;
+  font-weight: 500;
+  position: relative;
+}
 
-    header p {
-      font-size: 1.2rem;
-      color: #666;
-    }
+/* Animated underline */
+nav a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #4f46e5;
+  transition: width 0.3s;
+}
 
-    nav {
-      margin: 20px 0;
-    }
+nav a:hover::after {
+  width: 100%;
+}
 
-    nav a {
-      text-decoration: none;
-      color: #007bff;
-      margin: 0 15px;
-      font-weight: 500;
-    }
+/* Sections */
+section {
+  margin-bottom: 50px;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+h2 {
+  color: #4f46e5;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  position: relative;
+}
 
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-      width: 100%;
-      max-width: 900px;
-    }
+/* Accent bar instead of border */
+h2::before {
+  content: "";
+  position: absolute;
+  left: -12px;
+  top: 6px;
+  width: 4px;
+  height: 20px;
+  background: #4f46e5;
+  border-radius: 2px;
+}
 
-    .project-card {
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      transition: transform 0.2s;
-      text-decoration: none;
-    }
+/* Project grid */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
 
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
+/* Project cards */
+.project-card {
+  background: white;
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.25s ease;
+  border: 1px solid transparent;
+}
 
-    .project-card h3 {
-      color: #007bff;
-      margin-bottom: 10px;
-    }
+.project-card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  border: 1px solid #e0e7ff;
+}
 
-    .project-card p {
-      color: #555;
-    }
+.project-card h3 {
+  color: #4f46e5;
+  margin-bottom: 10px;
+}
 
-    .project-card a {
-      text-decoration: none;
-      color: inherit;
-       
-    }
+.project-card p {
+  color: #4b5563;
+}
 
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #777;
-    }
+/* Make entire card clickable feel */
+.project-card a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* GitHub icon */
+.github-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin: 0 6px;
+  opacity: 0.8;
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
