@@ -116,3 +116,25 @@
       font-size: 0.9rem;
       color: #777;
     }
+
+    /* Container for tags */
+    .tags {
+      margin-top: 10px;
+    }
+    
+    /* Base tag style */
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 4px 10px;
+      border-radius: 999px;
+      margin-right: 6px;
+    }
+    
+    /* No-AI specific style */
+    .tag.no-ai {
+      background: rgba(16, 185, 129, 0.1);   /* soft green */
+      color: #059669;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
